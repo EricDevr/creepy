@@ -36,3 +36,9 @@
     font-weight: bolder;
     color: aliceblue;
 }
+
+@media (max-width: 700px) {
+    #posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
