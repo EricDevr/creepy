@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from home.views import home
 from createpost.views import createPost
+from post.views import post
 
 urlpatterns = [
     path('', home, name='home'),
     path('createpost/', createPost, name='createpost'),
+    path('post/<idu>/<titleu>/', post, name='post'),
     path('admin/', admin.site.urls),
 ]

@@ -26,8 +26,6 @@ header {
     width: 100%;
     text-align: center;
     padding: 1em;
-    background-color: rgba(112,152,0,.2);
-    backdrop-filter: blur(10px);
 }
 header h1 {
     

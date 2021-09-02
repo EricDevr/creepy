@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 """
  ubuntu: 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
+ movil: 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
 """
 
 from pathlib import Path
@@ -37,6 +38,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'home',
     'createpost',
+    'post',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
