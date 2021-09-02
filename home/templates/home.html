@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block css_files %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}"/>
+{% endblock %}
+
+{% block body %}
+    <section id="posts">
+        {% for post in posts %}
+        <a href="" class="card">
+            <img src="{{ post.image.url }}">
+            <div class="screen"><p>{{ post.title }}</p></div>
+        </a>
+        {% endfor %}
+    </section>
+{% endblock %}

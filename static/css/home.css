@@ -1,0 +1,38 @@
+#posts {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+    position: relative;
+    display: inline-block;
+    width: 100%; height: 200px;
+    text-decoration: none;
+    overflow: hidden;
+}
+.card img {
+    position: relative;
+    display: block;
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+.screen {
+    position: absolute;
+    display: flex;
+    top: 0;
+    align-items: center;
+    width: 100%; height: 100%;
+    padding: 1em;
+    background-color: rgba(112,152,0,.2);
+}
+.screen p {
+    position: relative;
+    display: -webkit-box;
+    font-size: 12px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: bolder;
+    color: aliceblue;
+}

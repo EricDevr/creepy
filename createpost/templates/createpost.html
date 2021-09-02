@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" Content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>create new post</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/default.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/createpost.css' %}"/>
+    </head>
+    <body>
+        <header>
+            <a href="{% url 'home' %}" id="home">home</a>
+            <h1>create new post</h1>
+        </header>
+        <section id="content-form">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit">send</button>
+            </form>
+        </section>
+    </body>
+</html>
