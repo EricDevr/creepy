@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Posts
 # Create your views here.
 def home(request):
-    posts = Posts.objects.all()
+    posts = Posts.objects.all().order_by("-id")
     context = {
         'posts': posts,
     }
