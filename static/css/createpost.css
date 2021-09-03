@@ -13,8 +13,9 @@ header h1 {
 }
 #content-form {
     position: relative;
-    display: inline-block;
-    width: 100%;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
     background-color: rgba(112,152,0,.2);
     backdrop-filter: blur(5px);
 }
@@ -22,7 +23,7 @@ header h1 {
 form {
     position: relative;
     display: block;
-    width: 40%;
+    width: 60%;
     margin: 1em auto;
     padding: 1em;
     border-radius: 3px;

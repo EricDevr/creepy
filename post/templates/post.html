@@ -15,5 +15,15 @@
         <img id="image" src="{{ post.image.url }}">
         <div id="date">{{ post.date }} {{ post.autor }}</div>
         <div id="content-post">{{ post.content }}</div>
+
+        <div id='votes'>
+            <span class='vo' onclick="votar({{ post.id }},'like')">likes <span id='like'>{{ post.like }}</span></span>
+            <span class='vo' onclick="votar({{ post.id }},'dislike')">dislike <span id='dislike'>{{ post.dislike }}</span></span>
+        </div>
     </div>
+{% endblock %}
+
+{% block js_files %}
+    {% load static %}
+    <script src="{% static 'js/post.js' %}"></script>
 {% endblock %}

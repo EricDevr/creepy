@@ -9,16 +9,21 @@
         <link rel="stylesheet" href="{% static 'css/createpost.css' %}"/>
     </head>
     <body>
-        <header>
-            <a href="{% url 'home' %}" id="home" class="button">home</a>
-            <h1>create new post</h1>
-        </header>
+        <div id='scre'>
         <section id="content-form">
+            <header>
+                <a href="{% url 'home' %}" id="home" class="button">home</a>
+                <h1>create new post</h1>
+            </header>
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form }}
                 <button type="submit">send</button>
             </form>
+            <footer>
+                footer <a href="{% url 'createpost' %}" class="button">create new post</a>
+            </footer>
         </section>
+        </div>
     </body>
 </html>
