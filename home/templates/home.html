@@ -12,7 +12,7 @@
 {% block body %}
     <section id="posts">
         {% for post in posts %}
-        <a href="{% url 'post' post.id post.title %}" class="card">
+        <a href="{% url 'post' post.id post.slug %}" class="card">
             <img src="{{ post.image.url }}">
             <div class="screen"><p>{{ post.title }}</p></div>
         </a>

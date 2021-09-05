@@ -15,7 +15,7 @@ def post(request, idu, titleu):
         if comment.is_valid():
             com.save()
     form = CommentForm()
-    comments = Comments.objects.filter(post=idu).order_by("-id")
+    comments = Comments.objects.filter(post=idu).order_by("id")
     context = {
         'post': postg,
         'comments': comments,

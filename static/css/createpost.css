@@ -57,11 +57,17 @@ button {
     border-radius: 5px;
 }
 li {
-    color: red;
+    position: relative;
+    display: block;
+    padding: .5em;
+    color: rgb(100,20,20);
 }
 
 
 @media (max-width: 700px) {
+    #content-form {
+        width: 100%;
+    }
     form {
         width: 95%;
     }

@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 """
  ubuntu: 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
- movil: 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
+ movil: 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
 """
 
 from pathlib import Path
